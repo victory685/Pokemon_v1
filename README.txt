@@ -1,28 +1,17 @@
-寶可夢中英圖鑑 V2
+寶可夢中英圖鑑 V3
 ====================
 
-新增功能
-- 1,025 隻寶可夢繁中 / 英文名稱
-- 寶可夢圖片
-- 繁中屬性
-- 第一～第九世代篩選
-- 屬性篩選
-- 編號 / 中文 / 英文 / 屬性即時搜尋
-- 收藏（儲存在這台 iPhone）
-- PWA 離線 App shell
-- 「下載離線圖片」：一次快取 1,025 張 sprite，之後斷網仍可看圖
+新增：
+- 點擊卡片開啟完整詳情
+- 背景資訊摘要（由分類、世代、屬性、身高體重、進化家族等結構化資料整理；不是官方圖鑑原文）
+- 六項基礎能力值
+- 一般／隱藏特性
+- 進化家族快速切換
+- 升級招式：採 PokéAPI 中該寶可夢「最新具有升級招式資料的版本組」
+- 招式顯示：等級、中英文名、屬性、物理/特殊/變化、威力、命中
+- 詳情頁內可搜尋招式
+- 延續 V2：收藏、世代/屬性篩選、離線圖片
 
-部署
-1. 將本 ZIP 解壓縮。
-2. 把 index.html、manifest.webmanifest、sw.js、icon.svg 四個檔案部署到同一個 HTTPS 資料夾。
-3. iPhone Safari 開啟網址。
-4. 分享 → 加入主畫面。
-5. 第一次有 Wi‑Fi 時，按「下載離線圖片」，等待顯示完成。
-
-資料來源
-- PokéAPI/pokeapi CSV
-- PokéAPI/sprites
-- zh-Hant language_id = 4
-- English language_id = 9
-
-建立日期：2026-08-20
+部署：
+將 ZIP 解壓後的 index.html、manifest.webmanifest、sw.js、icon-192.png、icon-512.png 全部上傳到 GitHub Pages repository 根目錄。
+若原本已部署 V2，直接覆蓋同名檔案即可。等待 GitHub Pages 重新部署後，iPhone 可重新開啟 App。若快取未更新，關閉 App 後重開或移除主畫面再重新加入。
